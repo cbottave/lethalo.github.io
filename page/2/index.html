@@ -175,8 +175,10 @@
 </head>
 
     
+        <body class="home-body">
     
-<header class="header">
+    
+<header class="header index-header">
 
     <div class="read-progress"></div>
     <div class="header-sidebar-menu">&#xe775;</div>
@@ -194,21 +196,34 @@
 
 
 
+height:50vh;
+
 >
     
     <!-- 主页  -->
+    
+    
+    <!-- 文章页  -->
             
-    <div class="site-intro-img" style="background-image: url(/)"></div>
+    <div class="site-intro-img" style="background-image: url(/intro/index-bg.jpg)"></div>
     <div class="site-intro-placeholder"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
             
+            lethal's Blog.
+            <!-- 文章页  -->
+            
         </h1>
         <!-- 副标题 -->
         <p class="intro-subtitle">
             <!-- 主页副标题  -->
+            
+            
+                Try Hard Enough?
+            
+            <!-- 文章页  -->
             
         </p>
         <!-- 文章页meta -->
@@ -300,34 +315,130 @@
     
     
         <article class="index-post">
-            <a class="abstract-title" href = "/2018/03/08/N皇后问题/" >
+            <a class="abstract-title" href = "/2018/02/16/MD简单语法/" >
                 
-                    <span>N皇后问题</span>
+                    <span>MD简单语法</span>
             </a>
             <div class="abstract-content">
-                dfs_N皇后问题
-123456789101112131415161718192021222324252627282930313233int n;  // 棋盘大小int ans = 0;  // 解的个数bool a[20];  // 列占用情况，若第 i 列被占用，则 a[i] = true，否则为 falsebool x1[20];  // 左下-右上 对角线的占用情况bool y1[20];  // 左上-右下 对角线的占用情况void dfs(int deep) &#123;  // deep 表示当前搜索到第几行    if (deep &gt;= n) &#123;  //...
+                写博客的第一步学些简单MD语法
+支持html
+
+这是一个普通段落。
+            Foo    
+
+这是另一个普通段落。
+
+
+
+This is an H1(最高阶标题)This is an H2(第二阶标题)这是H1这是H2这是H6（闭合标题，美观用）
+这是H1这是H2这是H3
+区块引用first
+This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.Vestibu...
             </div>
             <div class="abstract-post-meta">
                 <!-- date  -->
                 <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/03/08</span>
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/02/16</span>
                 </div>
                 <!-- tags  -->
-                
-                <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "dfs,c++">dfs,c++</a>
-    
-</div>
                 
             </div>
         </article>
     
     <!-- paginator  -->
     
+    <nav class="page-nav">
+        <a class="extend prev" rel="prev" href="/">&#60; PREV</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+    </nav>
+    
 </main>
             <!-- profile -->
+            
+            <div class="profile">
+    <img class="profile-avatar" src= /avatar/5186.jpg >
+    <div class="profile-name">LETHAL</div>
+    
+    <div class="profile-signature">
+        Try Hard Enough?
+    </div>
+    
+    
+    <div class="profile-social">
+        
+    
+        
+            
+                <a href="mailto:1223279817@qq.com" class="iconfont-archer email" title=email ></a>
+            
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+    </div>
+    
+    
+        <div class="friends">
+            <div>FRIENDS</div>
+            
+                
+                    <span>
+                        <a href= https://winter3un.github.io/ target="_black">winter3un</a>
+                    </span>
+                
+            
+                
+                    <span>
+                        <a href= https://goldsnow.github.io/# target="_black">Goldsnow</a>
+                    </span>
+                
+            
+                
+                    <span>
+                        <a href= https://www.bertramc.cn/ target="_black">berTrAM</a>
+                    </span>
+                
+            
+                
+                    <span>
+                        <a href= http://www.xalex.cn/blog/Typecho/index.php/page/1/ target="_black">ALEX_S</a>
+                    </span>
+                
+            
+        </div>
+    
+    
+        <div class="about-me">
+            <a href = "/about" >ABOUT ME</a>
+        </div>
+    
+</div>
             
         </div>
         <footer class="footer footer-unloaded">
