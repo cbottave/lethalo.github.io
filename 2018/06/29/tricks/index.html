@@ -369,7 +369,7 @@ height:50vh;
 <li>添加后登陆即可</li>
 </ul>
 <h4 id="0x7你能找到账号密码吗？"><a href="#0x7你能找到账号密码吗？" class="headerlink" title="0x7你能找到账号密码吗？"></a>0x7你能找到账号密码吗？</h4><ul>
-<li><p>另存为网页中的图片，gif图，多以很可能在另一帧的图片中隐藏信息，<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">- ![86.png](https://i.loli.net/2018/06/29/5b35cb747a53c.png)</span><br><span class="line">- file -&gt; open,打开图片</span><br><span class="line">- Analyse -&gt; Frame Browser,打开后点击下面的左右箭头，找到登陆密码</span><br><span class="line">- Analyse -&gt; File Format查看图片数据，最下面有用户名，回到网页中登陆得到key</span><br><span class="line"></span><br><span class="line">#### 0x8 老规矩 你懂的</span><br><span class="line">- 右键查看源代码</span><br><span class="line">#### 0x9文件上传</span><br><span class="line">- F12，打开控制台，找到```script```标签的```html```代码,选中右键编辑</span><br><span class="line">![1dd3.png](https://i.loli.net/2018/06/29/5b35cd2f8623e.png)</span><br><span class="line">- 新建一个txt，改成asp后缀，上传</span><br><span class="line"></span><br><span class="line">#### 0x10 CSS OR XSS</span><br><span class="line">-右键查看源代码，发现有一个default.css，有前面的描述有些联系，点击查看</span><br><span class="line">![45.png](https://i.loli.net/2018/06/29/5b35cddde18f3.png)</span><br><span class="line"></span><br><span class="line">#### 0x11 找找看看</span><br><span class="line">- 下载网站上的图片，用winhex打开，在最下面有url编码</span><br><span class="line">- hackbar解密得到网盘网址</span><br><span class="line">- 密码在源代码中，同样用hacbar解密</span><br><span class="line"></span><br><span class="line">#### 0x12 只能上传图片哦</span><br><span class="line">- 修改后缀名phP，再次上传，成功得到flag</span><br><span class="line"></span><br><span class="line">#### 0x13 照猫画虎</span><br><span class="line">- ```url?id=ket1key1111:/1/1key</span><br></pre></td></tr></table></figure></p>
+<li><p>另存为网页中的图片，gif图，多以很可能在另一帧的图片中隐藏信息，<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">- ![86.png](https://i.loli.net/2018/06/29/5b35cb747a53c.png)</span><br><span class="line">- file -&gt; open,打开图片</span><br><span class="line">- Analyse -&gt; Frame Browser,打开后点击下面的左右箭头，找到登陆密码</span><br><span class="line">- Analyse -&gt; File Format查看图片数据，最下面有用户名，回到网页中登陆得到key</span><br><span class="line"></span><br><span class="line">#### 0x8老规矩 你懂的</span><br><span class="line">- 右键查看源代码</span><br><span class="line">#### 0x9文件上传</span><br><span class="line">- F12，打开控制台，找到```script```标签的```html```代码,选中右键编辑</span><br><span class="line">![1dd3.png](https://i.loli.net/2018/06/29/5b35cd2f8623e.png)</span><br><span class="line">- 新建一个txt，改成asp后缀，上传</span><br><span class="line"></span><br><span class="line">#### 0x10 CSS OR XSS</span><br><span class="line">-右键查看源代码，发现有一个default.css，有前面的描述有些联系，点击查看</span><br><span class="line">![45.png](https://i.loli.net/2018/06/29/5b35cddde18f3.png)</span><br><span class="line"></span><br><span class="line">#### 0x11 找找看看</span><br><span class="line">- 下载网站上的图片，用winhex打开，在最下面有url编码</span><br><span class="line">- hackbar解密得到网盘网址</span><br><span class="line">- 密码在源代码中，同样用hacbar解密</span><br><span class="line"></span><br><span class="line">#### 0x12 只能上传图片哦</span><br><span class="line">- 修改后缀名phP，再次上传，成功得到flag</span><br><span class="line"></span><br><span class="line">#### 0x13 照猫画虎</span><br><span class="line">- ```url?id=ket1key1111:/1/1key</span><br></pre></td></tr></table></figure></p>
 </li>
 <li><p>构造匹配正则的字符，用id以get方式传入</p>
 </li>
@@ -636,6 +636,10 @@ top:50vh;
     
     
     
+    
+    
+    
+    
     <div class="total-archive"> Total : 12 </div>
     
     <div class="post-archive">
@@ -653,12 +657,12 @@ top:50vh;
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">05/30</span><a class="archive-post-title" href= "/2018/05/30/ciscn-wp/" >ciscn_wp</a>
+            <span class="archive-post-date">05/30</span><a class="archive-post-title" href= "/2018/05/30/iscc-writeup/" >iscc_writeup</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">05/30</span><a class="archive-post-title" href= "/2018/05/30/iscc-writeup/" >iscc_writeup</a>
+            <span class="archive-post-date">05/30</span><a class="archive-post-title" href= "/2018/05/30/ciscn-wp/" >ciscn_wp</a>
         </li>
     
     
@@ -713,17 +717,17 @@ top:50vh;
     
         <span class="sidebar-tag-name" data-tags="dfs,c++"><span class="iconfont-archer">&#xe606;</span>dfs,c++</span>
     
+        <span class="sidebar-tag-name" data-tags="ctf"><span class="iconfont-archer">&#xe606;</span>ctf</span>
+    
+        <span class="sidebar-tag-name" data-tags="Writeup"><span class="iconfont-archer">&#xe606;</span>Writeup</span>
+    
+        <span class="sidebar-tag-name" data-tags="dfs,c语言"><span class="iconfont-archer">&#xe606;</span>dfs,c语言</span>
+    
         <span class="sidebar-tag-name" data-tags="reverse"><span class="iconfont-archer">&#xe606;</span>reverse</span>
     
         <span class="sidebar-tag-name" data-tags="shiyanbar,write_up"><span class="iconfont-archer">&#xe606;</span>shiyanbar,write_up</span>
     
-        <span class="sidebar-tag-name" data-tags="Writeup"><span class="iconfont-archer">&#xe606;</span>Writeup</span>
-    
         <span class="sidebar-tag-name" data-tags="dfs"><span class="iconfont-archer">&#xe606;</span>dfs</span>
-    
-        <span class="sidebar-tag-name" data-tags="dfs,c语言"><span class="iconfont-archer">&#xe606;</span>dfs,c语言</span>
-    
-        <span class="sidebar-tag-name" data-tags="ctf"><span class="iconfont-archer">&#xe606;</span>ctf</span>
     
     </div>
     <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>
