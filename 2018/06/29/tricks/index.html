@@ -369,21 +369,49 @@ height:50vh;
 <li>添加后登陆即可</li>
 </ul>
 <h4 id="0x7你能找到账号密码吗？"><a href="#0x7你能找到账号密码吗？" class="headerlink" title="0x7你能找到账号密码吗？"></a>0x7你能找到账号密码吗？</h4><ul>
-<li><p>另存为网页中的图片，gif图，多以很可能在另一帧的图片中隐藏信息，<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">![86.png](https://i.loli.net/2018/06/29/5b35cb747a53c.png)</span><br><span class="line">- file -&gt; open,打开图片</span><br><span class="line">- Analyse -&gt; Frame Browser,打开后点击下面的左右箭头，找到登陆密码</span><br><span class="line">- Analyse -&gt; File Format查看图片数据，最下面有用户名，回到网页中登陆得到key</span><br><span class="line"></span><br><span class="line">#### 0x8老规矩 你懂的</span><br><span class="line">- 右键查看源代码</span><br><span class="line">#### 0x9文件上传</span><br><span class="line">- F12，打开控制台，找到```script```标签的```html```代码,选中右键编辑</span><br><span class="line">![1dd3.png](https://i.loli.net/2018/06/29/5b35cd2f8623e.png)</span><br><span class="line">- 新建一个txt，改成asp后缀，上传</span><br><span class="line"></span><br><span class="line">#### 0x10 CSS OR XSS</span><br><span class="line">-右键查看源代码，发现有一个default.css，有前面的描述有些联系，点击查看</span><br><span class="line">![45.png](https://i.loli.net/2018/06/29/5b35cddde18f3.png)</span><br><span class="line"></span><br><span class="line">#### 0x11 找找看看</span><br><span class="line">- 下载网站上的图片，用winhex打开，在最下面有url编码</span><br><span class="line">- hackbar解密得到网盘网址</span><br><span class="line">- 密码在源代码中，同样用hacbar解密</span><br><span class="line"></span><br><span class="line">#### 0x12 只能上传图片哦</span><br><span class="line">- 修改后缀名phP，再次上传，成功得到flag</span><br><span class="line"></span><br><span class="line">#### 0x13 照猫画虎</span><br><span class="line">- ```url?id=ket1key1111:/1/1key</span><br></pre></td></tr></table></figure></p>
-</li>
-<li><p>构造匹配正则的字符，用id以get方式传入</p>
-</li>
+<li>另存为网页中的图片，gif图，多以很可能在另一帧的图片中隐藏信息，Stegsolve.jar 一个图片隐写工具<br><img src="https://i.loli.net/2018/06/29/5b35cb747a53c.png" alt="86.png"></li>
+<li>file -&gt; open,打开图片</li>
+<li>Analyse -&gt; Frame Browser,打开后点击下面的左右箭头，找到登陆密码</li>
+<li>Analyse -&gt; File Format查看图片数据，最下面有用户名，回到网页中登陆得到key</li>
+</ul>
+<h4 id="0x8老规矩-你懂的"><a href="#0x8老规矩-你懂的" class="headerlink" title="0x8老规矩 你懂的"></a>0x8老规矩 你懂的</h4><ul>
+<li>右键查看源代码<h4 id="0x9文件上传"><a href="#0x9文件上传" class="headerlink" title="0x9文件上传"></a>0x9文件上传</h4></li>
+<li>F12，打开控制台，找到<em>script</em>标签的html代码,选中右键编辑<br><img src="https://i.loli.net/2018/06/29/5b35cd2f8623e.png" alt="1dd3.png"></li>
+<li>新建一个txt，改成asp后缀，上传</li>
+</ul>
+<h4 id="0x10-CSS-OR-XSS"><a href="#0x10-CSS-OR-XSS" class="headerlink" title="0x10 CSS OR XSS"></a>0x10 CSS OR XSS</h4><p>-右键查看源代码，发现有一个default.css，有前面的描述有些联系，点击查看<br><img src="https://i.loli.net/2018/06/29/5b35cddde18f3.png" alt="45.png"></p>
+<h4 id="0x11-找找看看"><a href="#0x11-找找看看" class="headerlink" title="0x11 找找看看"></a>0x11 找找看看</h4><ul>
+<li>下载网站上的图片，用winhex打开，在最下面有url编码</li>
+<li>hackbar解密得到网盘网址</li>
+<li>密码在源代码中，同样用hacbar解密</li>
+</ul>
+<h4 id="0x12-只能上传图片哦"><a href="#0x12-只能上传图片哦" class="headerlink" title="0x12 只能上传图片哦"></a>0x12 只能上传图片哦</h4><ul>
+<li>修改后缀名phP，再次上传，成功得到flag</li>
+</ul>
+<h4 id="0x13-照猫画虎"><a href="#0x13-照猫画虎" class="headerlink" title="0x13 照猫画虎"></a>0x13 照猫画虎</h4><p><code>url?id=ket1key1111:/1/1key</code> </p>
+<ul>
+<li>构造匹配正则的字符，用id以get方式传入</li>
 </ul>
 <h4 id="0x14-拍好队，绕过去"><a href="#0x14-拍好队，绕过去" class="headerlink" title="0x14 拍好队，绕过去"></a>0x14 拍好队，绕过去</h4><ul>
-<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">- 题意不是很明确，记个payload吧，原理是php对数组MD5加密的值为空</span><br><span class="line"></span><br><span class="line">#### 0x15 头都大了</span><br><span class="line">- 题目提示，F12打开后选中网络，F5刷新获取报文，在报文的头部字段</span><br><span class="line"></span><br><span class="line">#### 0x16 仔细找找呗</span><br><span class="line">- 网页源代码中有base64编码，解码即可</span><br><span class="line"></span><br><span class="line">#### 0x17 怎么回事，我是个flag</span><br><span class="line">- 查看源代码</span><br><span class="line">![456.png](https://i.loli.net/2018/06/29/5b35d1de2a13e.png)</span><br><span class="line">- ```url/?hello=welcome</span><br></pre></td></tr></table></figure>
-</li>
+<li><code>url/?uname[]=1&amp;&amp;passwd[]=2</code></li>
+<li>题意不是很明确，记个payload吧，原理是php对数组MD5加密的值为空</li>
 </ul>
-<p><img src="https://i.loli.net/2018/06/29/5b35d1de2bad1.png" alt="1234.png"><br><img src="https://i.loli.net/2018/06/29/5b35d1de28a2e.png" alt="1456.png"></p>
+<h4 id="0x15-头都大了"><a href="#0x15-头都大了" class="headerlink" title="0x15 头都大了"></a>0x15 头都大了</h4><ul>
+<li>题目提示，F12打开后选中网络，F5刷新获取报文，在报文的头部字段</li>
+</ul>
+<h4 id="0x16-仔细找找呗"><a href="#0x16-仔细找找呗" class="headerlink" title="0x16 仔细找找呗"></a>0x16 仔细找找呗</h4><ul>
+<li>网页源代码中有base64编码，解码即可</li>
+</ul>
+<h4 id="0x17-怎么回事，我是个flag"><a href="#0x17-怎么回事，我是个flag" class="headerlink" title="0x17 怎么回事，我是个flag"></a>0x17 怎么回事，我是个flag</h4><ul>
+<li>查看源代码<br><img src="https://i.loli.net/2018/06/29/5b35d1de2a13e.png" alt="456.png"></li>
+<li><code>url/?hello=welcome</code><br><img src="https://i.loli.net/2018/06/29/5b35d1de2bad1.png" alt="1234.png"><br><img src="https://i.loli.net/2018/06/29/5b35d1de28a2e.png" alt="1456.png"></li>
+</ul>
 <h4 id="0x18-flag是什么呢？"><a href="#0x18-flag是什么呢？" class="headerlink" title="0x18 flag是什么呢？"></a>0x18 flag是什么呢？</h4><ul>
-<li>php黑魔法，对数组<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-  ```url?password[]=1</span><br></pre></td></tr></table></figure></li>
+<li>php黑魔法，对数组<code>strcmp()</code>为空</li>
+<li><code>url?password[]=1</code> </li>
 </ul>
 <h4 id="0x19-找呀找呀找不到"><a href="#0x19-找呀找呀找不到" class="headerlink" title="0x19 找呀找呀找不到"></a>0x19 找呀找呀找不到</h4><ul>
-<li><code>url?id=true</code></li>
+<li><code>url?id=true</code> </li>
 </ul>
 
     </article>
@@ -491,7 +519,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
         </div>
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#writeup"><span class="toc-number">1.</span> <span class="toc-text">writeup</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Tips"><span class="toc-number">1.1.</span> <span class="toc-text">Tips</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#0x1-key就是…"><span class="toc-number">1.1.0.1.</span> <span class="toc-text">0x1 key就是…</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#0x2-base64"><span class="toc-number">1.1.0.2.</span> <span class="toc-text">0x2 base64</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#0x3-utf-7"><span class="toc-number">1.1.0.3.</span> <span class="toc-text">0x3 utf-7</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#0x4-JS-challenge"><span class="toc-number">1.1.0.4.</span> <span class="toc-text">0x4 JS challenge</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#0x5-技术宅拯救世界"><span class="toc-number">1.1.0.5.</span> <span class="toc-text">0x5 技术宅拯救世界</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#0x6-这是黑阔经常干的事"><span class="toc-number">1.1.0.6.</span> <span class="toc-text">0x6 这是黑阔经常干的事</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#0x7你能找到账号密码吗？"><span class="toc-number">1.1.0.7.</span> <span class="toc-text">0x7你能找到账号密码吗？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#0x14-拍好队，绕过去"><span class="toc-number">1.1.0.8.</span> <span class="toc-text">0x14 拍好队，绕过去</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#0x18-flag是什么呢？"><span class="toc-number">1.1.0.9.</span> <span class="toc-text">0x18 flag是什么呢？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#0x19-找呀找呀找不到"><span class="toc-number">1.1.0.10.</span> <span class="toc-text">0x19 找呀找呀找不到</span></a></li></ol></li></ol></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#writeup"><span class="toc-number">1.</span> <span class="toc-text">writeup</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Tips"><span class="toc-number">1.1.</span> <span class="toc-text">Tips</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#0x1-key就是…"><span class="toc-number">1.1.0.1.</span> <span class="toc-text">0x1 key就是…</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#0x2-base64"><span class="toc-number">1.1.0.2.</span> <span class="toc-text">0x2 base64</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#0x3-utf-7"><span class="toc-number">1.1.0.3.</span> <span class="toc-text">0x3 utf-7</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#0x4-JS-challenge"><span class="toc-number">1.1.0.4.</span> <span class="toc-text">0x4 JS challenge</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#0x5-技术宅拯救世界"><span class="toc-number">1.1.0.5.</span> <span class="toc-text">0x5 技术宅拯救世界</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#0x6-这是黑阔经常干的事"><span class="toc-number">1.1.0.6.</span> <span class="toc-text">0x6 这是黑阔经常干的事</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#0x7你能找到账号密码吗？"><span class="toc-number">1.1.0.7.</span> <span class="toc-text">0x7你能找到账号密码吗？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#0x8老规矩-你懂的"><span class="toc-number">1.1.0.8.</span> <span class="toc-text">0x8老规矩 你懂的</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#0x9文件上传"><span class="toc-number">1.1.0.9.</span> <span class="toc-text">0x9文件上传</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#0x10-CSS-OR-XSS"><span class="toc-number">1.1.0.10.</span> <span class="toc-text">0x10 CSS OR XSS</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#0x11-找找看看"><span class="toc-number">1.1.0.11.</span> <span class="toc-text">0x11 找找看看</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#0x12-只能上传图片哦"><span class="toc-number">1.1.0.12.</span> <span class="toc-text">0x12 只能上传图片哦</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#0x13-照猫画虎"><span class="toc-number">1.1.0.13.</span> <span class="toc-text">0x13 照猫画虎</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#0x14-拍好队，绕过去"><span class="toc-number">1.1.0.14.</span> <span class="toc-text">0x14 拍好队，绕过去</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#0x15-头都大了"><span class="toc-number">1.1.0.15.</span> <span class="toc-text">0x15 头都大了</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#0x16-仔细找找呗"><span class="toc-number">1.1.0.16.</span> <span class="toc-text">0x16 仔细找找呗</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#0x17-怎么回事，我是个flag"><span class="toc-number">1.1.0.17.</span> <span class="toc-text">0x17 怎么回事，我是个flag</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#0x18-flag是什么呢？"><span class="toc-number">1.1.0.18.</span> <span class="toc-text">0x18 flag是什么呢？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#0x19-找呀找呀找不到"><span class="toc-number">1.1.0.19.</span> <span class="toc-text">0x19 找呀找呀找不到</span></a></li></ol></li></ol></li></ol></li></ol>
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
@@ -504,14 +532,6 @@ top:50vh;
     <div class="sidebar-content sidebar-content-show-archive">
           <div class="sidebar-panel-archives">
     <!-- 在ejs中将archive按照时间排序 -->
-    
-    
-    
-    
-    
-    
-    
-    
     
     
     
@@ -735,9 +755,9 @@ top:50vh;
         <div class="sidebar-panel-tags">
     <div class="sidebar-tags-name">
     
-        <span class="sidebar-tag-name" data-tags="Writeup"><span class="iconfont-archer">&#xe606;</span>Writeup</span>
-    
         <span class="sidebar-tag-name" data-tags="dfs,c++"><span class="iconfont-archer">&#xe606;</span>dfs,c++</span>
+    
+        <span class="sidebar-tag-name" data-tags="Writeup"><span class="iconfont-archer">&#xe606;</span>Writeup</span>
     
         <span class="sidebar-tag-name" data-tags="dfs,c语言"><span class="iconfont-archer">&#xe606;</span>dfs,c语言</span>
     
@@ -745,9 +765,9 @@ top:50vh;
     
         <span class="sidebar-tag-name" data-tags="ctf"><span class="iconfont-archer">&#xe606;</span>ctf</span>
     
-        <span class="sidebar-tag-name" data-tags="dfs"><span class="iconfont-archer">&#xe606;</span>dfs</span>
-    
         <span class="sidebar-tag-name" data-tags="shiyanbar,write_up"><span class="iconfont-archer">&#xe606;</span>shiyanbar,write_up</span>
+    
+        <span class="sidebar-tag-name" data-tags="dfs"><span class="iconfont-archer">&#xe606;</span>dfs</span>
     
     </div>
     <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>
